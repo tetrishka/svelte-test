@@ -16,9 +16,9 @@
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit neque.
                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet veritatis nisi.
                   </h2>
+                  <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
                   <div style="color:black" class="scroll-button animate-scroll" tabindex="0">
-                      <a href="/about">Click here</a>
-                      <div class="arrow">-</div>
+                      <a href="/about">Click here</a><div class="arrow">-</div>
                  </div>
                </div>
              </div>
@@ -53,14 +53,20 @@
         }
 
         .info h1 p{
-position: relative;
-font: inherit;
-margin: 0;
-text-align: left;
-line-height: 130%;
-width: fit-content;
-font-weight: 800;
-letter-spacing: -0.03em;
+        position: relative;
+        font: inherit;
+        margin: 0;
+        text-align: left;
+        line-height: 130%;
+        width: fit-content;
+        font-weight: 800;
+        letter-spacing: -0.03em;
+        }
+
+        .info h2 p{
+        max-width: 65ch;
+        font-weight: 200;
+        margin-top: 0.50rem;
         }
 
         .background-div {
